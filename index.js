@@ -7,9 +7,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/", (req, res) => {
-  res.send("Book Find Home Page");
-});
+// app.use("/", (req, res) => {
+//   res.send("Book Find Home Page");
+// });
 
 app.use("/book", bookRouter);
 
